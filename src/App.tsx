@@ -1,7 +1,9 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+// import du composant
 
+// Conversion du Hook en classe
 function App() {
   return (
     <div className="App">
