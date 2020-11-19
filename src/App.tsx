@@ -1,14 +1,18 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
-// import du composant
 
-// Conversion du Hook en classe
+import { HeaderBar } from './Components/HeaderBar';
+import { ListeRecipes } from './Components/ListeRecipes/index';
+
+// Conversion du Hook en classù
 function App() {
   return (
     <div className="App">
+      <HeaderBar.Display logo={()=>{ return (<div> <img src={'url'} alt=""/> </div>) }} menu={()=>{ return (<div>  </div>) }}  name={ <div>  </div> } />
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
+        <ListeRecipes.Display />
         <p>
           Edit <code>src/App.tsx</code> and save to reload.
         </p>
